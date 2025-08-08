@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panthera Block - Advanced blockchain solutions for the modern world">
+    <meta name="keywords" content="blockchain, cryptocurrency, panthera, block, technology">
+    <meta name="author" content="Panthera Block">
+    <title>Panthera Block - Advanced Blockchain Solutions</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzAwN0FGRiIvPgo8cGF0aCBkPSJNMTYgOEwxMCAxNkgxNkwyMiAxNkwxNiA4WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTE2IDI0TDEwIDE2SDE2TDIyIDE2TDE2IDI0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen" aria-hidden="true">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="panthera-icon"></div>
+            </div>
+            <div class="loading-text">Loading Panthera Block</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="#home" class="brand-link" aria-label="Panthera Block Home">
+                        <div class="brand-icon"></div>
+                        <span class="brand-text">Panthera Block</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list" role="menubar">
+                        <li class="nav-item" role="none">
+                            <a href="#home" class="nav-link" role="menuitem">Home</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="#features" class="nav-link" role="menuitem">Features</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="#technology" class="nav-link" role="menuitem">Technology</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="#roadmap" class="nav-link" role="menuitem">Roadmap</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-background">
+                <div class="hero-particles" id="hero-particles"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title" class="hero-title">
+                        <span class="title-line">Next Generation</span>
+                        <span class="title-line highlight">Blockchain</span>
+                        <span class="title-line">Solutions</span>
+                    </h1>
+                    <p class="hero-description">
+                        Panthera Block revolutionizes blockchain technology with advanced security, 
+                        lightning-fast transactions, and unparalleled scalability for the digital future.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" id="get-started-btn">
+                            <span>Get Started</span>
+                            <div class="btn-ripple"></div>
+                        </button>
+                        <button class="btn btn-secondary" id="learn-more-btn">
+                            <span>Learn More</span>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="1000000">0</div>
+                            <div class="stat-label">Transactions</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="99.9">0</div>
+                            <div class="stat-label">% Uptime</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50000">0</div>
+                            <div class="stat-label">Users</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section" aria-labelledby="features-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="features-title" class="section-title">Powerful Features</h2>
+                    <p class="section-description">
+                        Discover the cutting-edge features that make Panthera Block the future of blockchain technology.
+                    </p>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <div class="icon-security"></div>
+                        </div>
+                        <h3 class="feature-title">Advanced Security</h3>
+                        <p class="feature-description">
+                            Military-grade encryption and multi-layer security protocols ensure your assets are always protected.
+                        </p>
+                    </article>
+                    
+                    <article class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <div class="icon-speed"></div>
+                        </div>
+                        <h3 class="feature-title">Lightning Fast</h3>
+                        <p class="feature-description">
+                            Process thousands of transactions per second with our optimized blockchain architecture.
+                        </p>
+                    </article>
+                    
+                    <article class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <div class="icon-scalability"></div>
+                        </div>
+                        <h3 class="feature-title">Infinite Scalability</h3>
+                        <p class="feature-description">
+                            Seamlessly scale from thousands to millions of users without compromising performance.
+                        </p>
+                    </article>
+                    
+                    <article class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <div class="icon-smart"></div>
+                        </div>
+                        <h3 class="feature-title">Smart Contracts</h3>
+                        <p class="feature-description">
+                            Deploy and execute smart contracts with our intuitive development environment.
+                        </p>
+                    </article>
+                    
+                    <article class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="feature-icon">
+                            <div class="icon-defi"></div>
+                        </div>
+                        <h3 class="feature-title">DeFi Ready</h3>
+                        <p class="feature-description">
+                            Built-in DeFi protocols for lending, staking, and yield farming opportunities.
+                        </p>
+                    </article>
+                    
+                    <article class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="feature-icon">
+                            <div class="icon-eco"></div>
+                        </div>
+                        <h3 class="feature-title">Eco-Friendly</h3>
+                        <p class="feature-description">
+                            Sustainable consensus mechanism that reduces energy consumption by 99%.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section id="technology" class="technology-section" aria-labelledby="tech-title">
+            <div class="container">
+                <div class="tech-content">
+                    <div class="tech-info">
+                        <h2 id="tech-title" class="section-title">Revolutionary Technology</h2>
+                        <p class="section-description">
+                            Built on cutting-edge blockchain technology with innovative consensus mechanisms 
+                            and advanced cryptographic protocols.
+                        </p>
+                        
+                        <div class="tech-features">
+                            <div class="tech-feature">
+                                <div class="tech-feature-icon"></div>
+                                <div class="tech-feature-content">
+                                    <h3>Quantum-Resistant Encryption</h3>
+                                    <p>Future-proof security against quantum computing threats.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-feature">
+                                <div class="tech-feature-icon"></div>
+                                <div class="tech-feature-content">
+                                    <h3>Sharding Technology</h3>
+                                    <p>Parallel processing for unlimited scalability potential.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-feature">
+                                <div class="tech-feature-icon"></div>
+                                <div class="tech-feature-content">
+                                    <h3>Cross-Chain Compatibility</h3>
+                                    <p>Seamless integration with other blockchain networks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-visual">
+                        <div class="blockchain-animation" id="blockchain-animation">
+                            <div class="block-chain">
+                                <div class="block active"></div>
+                                <div class="block"></div>
+                                <div class="block"></div>
+                                <div class="block"></div>
+                                <div class="block"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Section -->
+        <section id="roadmap" class="roadmap-section" aria-labelledby="roadmap-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="roadmap-title" class="section-title">Development Roadmap</h2>
+                    <p class="section-description">
+                        Our journey towards revolutionizing blockchain technology and digital finance.
+                    </p>
+                </div>
+                
+                <div class="roadmap-timeline">
+                    <div class="timeline-item completed" data-aos="fade-right">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Q1 2024</div>
+                            <h3 class="timeline-title">Foundation & Core Development</h3>
+                            <p class="timeline-description">
+                                Core blockchain infrastructure, consensus mechanism, and basic wallet functionality.
+                            </p>
+                            <div class="timeline-status completed">Completed</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item active" data-aos="fade-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Q2 2024</div>
+                            <h3 class="timeline-title">Smart Contracts & DeFi</h3>
+                            <p class="timeline-description">
+                                Smart contract deployment, DeFi protocols, and decentralized exchange integration.
+                            </p>
+                            <div class="timeline-status active">In Progress</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Q3 2024</div>
+                            <h3 class="timeline-title">Scaling Solutions</h3>
+                            <p class="timeline-description">
+                                Implementation of sharding, layer-2 solutions, and cross-chain bridges.
+                            </p>
+                            <div class="timeline-status upcoming">Upcoming</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Q4 2024</div>
+                            <h3 class="timeline-title">Enterprise Solutions</h3>
+                            <p class="timeline-description">
+                                Enterprise-grade tools, API integrations, and institutional partnerships.
+                            </p>
+                            <div class="timeline-status upcoming">Upcoming</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                        <p class="section-description">
+                            Ready to join the blockchain revolution? Contact us to learn more about 
+                            Panthera Block and how it can transform your business.
+                        </p>
+                        
+                        <div class="
